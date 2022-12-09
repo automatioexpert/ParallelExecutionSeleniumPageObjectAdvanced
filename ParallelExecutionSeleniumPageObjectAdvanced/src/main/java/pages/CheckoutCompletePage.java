@@ -24,8 +24,8 @@ public class CheckoutCompletePage {
 		return thankYouMessage;
 	}
 
-	public WebElement getBackToHomeButton() {
-		return backToHomeBtn;
+	public InventoryPage getBackToHomeButton() {
+		return new InventoryPage(driver);
 	}
 
 }

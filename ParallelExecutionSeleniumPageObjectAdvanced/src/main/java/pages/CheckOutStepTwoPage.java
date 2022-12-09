@@ -17,8 +17,10 @@ public class CheckOutStepTwoPage {
 	@FindBy(name = "finish")
 	private WebElement finishBtn;
 
-	public WebElement getFinishButton() {
-		return finishBtn;
+	public CheckoutCompletePage getFinishButton() {
+		finishBtn.click();
+		return new CheckoutCompletePage(driver);
 	}
 
+	
 }

@@ -35,8 +35,9 @@ public class CheckOutStepOnePage {
 
 	}
 
-	public WebElement getContinueBtn() {
-		return continueBtn;
+	public CheckOutStepTwoPage getContinueBtn() {
+		continueBtn.click();
+		return new CheckOutStepTwoPage(driver);
 	}
 	
 	

@@ -35,7 +35,7 @@ public class EndToEndTest extends TestBase {
 		checkOutComplete = new CheckoutCompletePage(getDriver());
 
 	}
-
+/*
 	@Test(priority = 0)
 	public void loginTest() throws InterruptedException {
 		loginPage.getUserName().sendKeys("standard_user");
@@ -48,16 +48,30 @@ public class EndToEndTest extends TestBase {
 		Assert.assertEquals(actualText, expectedText);
 		System.out.println("Login Test Passed");
 
+	} */
+	
+	@Test(priority = 0)
+	public void loginTest() throws InterruptedException {
+		loginPage.getUserName().sendKeys("standard_user");
+		loginPage.getPassword().sendKeys("secret_sauce");
+		InventoryPage inventory=loginPage.getLoginButton();
+		Thread.sleep(3000);
+		String expectedText = "PRODUCTS";
+		String actualText = getDriver().findElement(By.cssSelector("span.title")).getText();
+		System.out.println("Actual text is : "+actualText);
+		Assert.assertEquals(actualText, expectedText);
+		System.out.println("Login Test Passed");
+
 	}
 
 	@Test(priority = 1)
 	public void selectProductAndCheckOutTest() {
 		inventory.getAddTshirtButton().click();
-		inventory.getGoToShoppingCartButton().click();
-		cart.getCheckButton().click();
-		checkOutStepOne.enterCustomerDetails("user47778", "Smith", "+1-12399230");
-		checkOutStepOne.getContinueBtn().click();
-		checkOutStepTwo.getFinishButton().click();
+		CartPage cart=inventory.getGoToShoppingCartButton();
+		CheckOutStepOnePage checkStep1=cart.getCheckButton();
+		checkStep1.enterCustomerDetails("user47778", "Smith", "+1-12399230");
+		CheckOutStepTwoPage checkStep2=checkStep1.getContinueBtn();
+		CheckoutCompletePage checkOutComplete=checkStep2.getFinishButton();
 		checkOutComplete.getBackToHomeButton();
 
 		System.out.println("End to End Test Execution completed...Test Passed");

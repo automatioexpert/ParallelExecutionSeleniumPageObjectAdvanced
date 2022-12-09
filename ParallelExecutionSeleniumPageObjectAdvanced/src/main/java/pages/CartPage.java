@@ -17,9 +17,12 @@ public class CartPage {
 	@FindBy(css = "button.btn.btn_action.btn_medium.checkout_button")
 	private WebElement checkOutButton;
 
-	public WebElement getCheckButton() {
-		return checkOutButton;
+	public CheckOutStepOnePage getCheckButton() {
+		checkOutButton.click();
+		return new CheckOutStepOnePage(driver);
 	}
+	
+	
 	
 
 }

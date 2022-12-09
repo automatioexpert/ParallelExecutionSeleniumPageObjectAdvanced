@@ -29,9 +29,9 @@ public class InventoryPage {
 
 	}
 
-	public WebElement getGoToShoppingCartButton() {
-
-		return goToShoppingCart;
+	public CartPage getGoToShoppingCartButton() {
+		goToShoppingCart.click();
+		return new CartPage(driver) ;
 
 	}
 

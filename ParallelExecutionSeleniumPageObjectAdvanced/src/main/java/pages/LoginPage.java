@@ -45,8 +45,9 @@ public class LoginPage extends TestBase {
 		return password;
 	}
 
-	public WebElement getLoginButton() {
-		return loginBtn;
+	public InventoryPage getLoginButton() {
+		loginBtn.click();
+		return new InventoryPage(driver);
 	}
 
 }

@@ -16,6 +16,7 @@ public class LoginTest extends TestBase {
 		loginPage = new LoginPage(getDriver());
 	}
 	
+	/*
 	@Test(priority = 0)
 	public void loginTest() throws InterruptedException {
 		loginPage.getUserName().sendKeys("standard_user");
@@ -29,5 +30,5 @@ public class LoginTest extends TestBase {
 		System.out.println("Login Test Passed");
 		
 	}
-
+ */
 }
