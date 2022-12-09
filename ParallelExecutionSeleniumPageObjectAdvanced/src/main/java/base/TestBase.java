@@ -49,7 +49,7 @@ public class TestBase {
 		getDriver().manage().window().maximize();
 		getDriver().get(Constant.URL);
 
-		System.out.println("Browser set is completed");
+		System.out.println("Browser setup is completed");
 	}
 
 	@AfterTest

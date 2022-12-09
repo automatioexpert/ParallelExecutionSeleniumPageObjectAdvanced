@@ -54,7 +54,8 @@ public class EndToEndTest extends TestBase {
 	public void loginTest() throws InterruptedException {
 		loginPage.getUserName().sendKeys("standard_user");
 		loginPage.getPassword().sendKeys("secret_sauce");
-		InventoryPage inventory=loginPage.getLoginButton();
+		//InventoryPage inventory=loginPage.getLoginButton();
+		loginPage.getLoginButton();
 		Thread.sleep(3000);
 		String expectedText = "PRODUCTS";
 		String actualText = getDriver().findElement(By.cssSelector("span.title")).getText();
@@ -64,6 +65,7 @@ public class EndToEndTest extends TestBase {
 
 	}
 
+	/*
 	@Test(priority = 1)
 	public void selectProductAndCheckOutTest() {
 		inventory.getAddTshirtButton().click();
@@ -75,6 +77,19 @@ public class EndToEndTest extends TestBase {
 		checkOutComplete.getBackToHomeButton();
 
 		System.out.println("End to End Test Execution completed...Test Passed");
-	}
+	} */
 
+
+	@Test(priority = 1)
+	public void selectProductAndCheckOutTest() {
+		inventory.getAddTshirtButton().click();
+		CheckOutStepOnePage checkStep1=inventory.getGoToShoppingCartButton().getCheckButton();
+		//CheckOutStepOnePage checkStep1=cart.getCheckButton();
+		checkStep1.enterCustomerDetails("user47778", "Smith", "+1-12399230");
+		CheckoutCompletePage checkStep2=checkStep1.getContinueBtn().getFinishButton();
+		//CheckoutCompletePage checkOutComplete=checkStep2.getFinishButton();
+		checkStep2.getBackToHomeButton();
+
+		System.out.println("End to End Test Execution completed...Test Passed");
+	}
 }

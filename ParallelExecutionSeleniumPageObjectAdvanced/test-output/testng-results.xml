@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-09T20:53:07 IST" name="Parallel Test Suite" finished-at="2022-12-09T20:53:22 IST" duration-ms="14563">
+  <suite started-at="2022-12-09T21:31:49 IST" name="Parallel Test Suite" finished-at="2022-12-09T21:32:05 IST" duration-ms="16009">
     <groups>
     </groups>
-    <test started-at="2022-12-09T20:53:07 IST" name="Chrome Test" finished-at="2022-12-09T20:53:19 IST" duration-ms="11609">
+    <test started-at="2022-12-09T21:31:49 IST" name="Chrome Test" finished-at="2022-12-09T21:31:58 IST" duration-ms="9176">
       <class name="tests.EndToEndTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T20:53:07 IST" name="setUp" finished-at="2022-12-09T20:53:12 IST" duration-ms="4994" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T21:31:49 IST" name="setUp" finished-at="2022-12-09T21:31:54 IST" duration-ms="5117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="classSetUp()[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T20:53:12 IST" name="classSetUp" finished-at="2022-12-09T20:53:12 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="classSetUp()[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T21:31:54 IST" name="classSetUp" finished-at="2022-12-09T21:31:54 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method signature="loginTest()[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T20:53:12 IST" name="loginTest" finished-at="2022-12-09T20:53:17 IST" duration-ms="4053" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T21:31:54 IST" name="loginTest" finished-at="2022-12-09T21:31:57 IST" duration-ms="3380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="selectProductAndCheckOutTest()[pri:1, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T20:53:17 IST" name="selectProductAndCheckOutTest" finished-at="2022-12-09T20:53:17 IST" duration-ms="667" status="PASS">
+        <test-method signature="selectProductAndCheckOutTest()[pri:1, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T21:31:57 IST" name="selectProductAndCheckOutTest" finished-at="2022-12-09T21:31:58 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductAndCheckOutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T20:53:17 IST" name="tearDown" finished-at="2022-12-09T20:53:19 IST" duration-ms="1576" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@5fd4f8f5]" started-at="2022-12-09T21:31:58 IST" name="tearDown" finished-at="2022-12-09T21:31:58 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.EndToEndTest -->
     </test> <!-- Chrome Test -->
-    <test started-at="2022-12-09T20:53:07 IST" name="Firefox Test" finished-at="2022-12-09T20:53:22 IST" duration-ms="14563">
-      <class name="tests.SampleTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SampleTest@6d3a388c]" started-at="2022-12-09T20:53:07 IST" name="setUp" finished-at="2022-12-09T20:53:16 IST" duration-ms="8439" status="PASS">
+    <test started-at="2022-12-09T21:31:49 IST" name="Firefox Test" finished-at="2022-12-09T21:32:05 IST" duration-ms="16009">
+      <class name="tests.EndToEndTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.EndToEndTest@50ad3bc1]" started-at="2022-12-09T21:31:49 IST" name="setUp" finished-at="2022-12-09T21:31:59 IST" duration-ms="9979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,19 +49,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:tests.SampleTest@6d3a388c]" started-at="2022-12-09T20:53:16 IST" name="loginTest" finished-at="2022-12-09T20:53:19 IST" duration-ms="3703" status="PASS">
+        <test-method is-config="true" signature="classSetUp()[pri:0, instance:tests.EndToEndTest@50ad3bc1]" started-at="2022-12-09T21:31:59 IST" name="classSetUp" finished-at="2022-12-09T21:31:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="loginTest()[pri:0, instance:tests.EndToEndTest@50ad3bc1]" started-at="2022-12-09T21:31:59 IST" name="loginTest" finished-at="2022-12-09T21:32:02 IST" duration-ms="3407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="addProductTillCheckOutTest()[pri:1, instance:tests.SampleTest@6d3a388c]" started-at="2022-12-09T20:53:19 IST" name="addProductTillCheckOutTest" finished-at="2022-12-09T20:53:21 IST" duration-ms="1402" status="PASS">
+        <test-method signature="selectProductAndCheckOutTest()[pri:1, instance:tests.EndToEndTest@50ad3bc1]" started-at="2022-12-09T21:32:02 IST" name="selectProductAndCheckOutTest" finished-at="2022-12-09T21:32:03 IST" duration-ms="1355" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductTillCheckOutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SampleTest@6d3a388c]" started-at="2022-12-09T20:53:21 IST" name="tearDown" finished-at="2022-12-09T20:53:22 IST" duration-ms="1009" status="PASS">
+        </test-method> <!-- selectProductAndCheckOutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@50ad3bc1]" started-at="2022-12-09T21:32:03 IST" name="tearDown" finished-at="2022-12-09T21:32:05 IST" duration-ms="1254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.SampleTest -->
+      </class> <!-- tests.EndToEndTest -->
     </test> <!-- Firefox Test -->
   </suite> <!-- Parallel Test Suite -->
 </testng-results>
